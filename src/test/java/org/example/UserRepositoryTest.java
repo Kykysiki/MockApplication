@@ -10,6 +10,7 @@ import java.util.List;
 class UserRepositoryTest {
 
     @Test
+    @DisplayName ("Поиск пользователя по логину → в случае если такой пользователь есть.")
     void findUserByLogin() {
         User Alex = new User("Alex","asdas");
         UserRepository userRepository = new UserRepository();
