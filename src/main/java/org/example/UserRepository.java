@@ -12,16 +12,14 @@ public class UserRepository {
     }
 
     public Optional<User> findUserByLogin(String login) {
-        Optional<User> user = Optional.empty();
         for (int i = 0; i < users.size(); i++) {
             User currentUser = users.get(i);
             String currentLogin = currentUser.getLogin();
             if (login.equals(currentLogin)) {
-                user = Optional.of(currentUser);
-                return user;
+                return Optional.of(currentUser);
             }
         }
-        return user;
+        return Optional.empty();
     }
 
     public Optional<User> findUserByLoginAndPassword(String login, String password) {
@@ -31,11 +29,10 @@ public class UserRepository {
             String currentLogin = currentUser.getLogin();
             String currentPassword = currentUser.getPassword();
             if (login.equals(currentLogin) && password.equals(currentPassword)) {
-                user = Optional.of(currentUser);
-                return user;
+                return Optional.of(currentUser);
             }
         }
-        return user;
+        return Optional.empty();
     }
 
 

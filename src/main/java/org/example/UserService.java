@@ -24,8 +24,7 @@ public class UserService {
         boolean userExist = this.userRepository.getAllUsers().stream().anyMatch(t -> t.equals(user));
 
         if (userExist) {
-            UserNonUniqueException userNonUniqueException = new UserNonUniqueException("User already exist", userLogin);
-            throw userNonUniqueException;
+            throw new UserNonUniqueException("User already exist", userLogin);
         }
         this.userRepository.addUser(user);
     }
