@@ -62,7 +62,7 @@ class UserRepositoryTest {
         UserRepository userRepository = new UserRepository();
         User Alex = new User("Alex", "asdas");
         userRepository.addUser(Alex);
-        Assertions.assertEquals(Optional.of(Alex.getLogin()), userRepository.findUserByLoginAndPassword("Anton", "asdas"));
+        Assertions.assertEquals(Optional.empty(), userRepository.findUserByLoginAndPassword("Anton", "asdas"));
     }
 
     @Test
@@ -71,6 +71,6 @@ class UserRepositoryTest {
         UserRepository userRepository = new UserRepository();
         User Alex = new User("Alex", "asdas");
         userRepository.addUser(Alex);
-        Assertions.assertEquals(Optional.of(Alex.getPassword()), userRepository.findUserByLoginAndPassword("Alex", "qwerty"));
+        Assertions.assertEquals(Optional.empty(), userRepository.findUserByLoginAndPassword("Alex", "qwerty"));
     }
 }

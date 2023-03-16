@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="624853fb-0bb9-4454-b5cc-22fb74fe954b" name="Changes" comment="Spring и Mockito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/UserServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,36 +74,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest.findUserByMatchingPassword">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="MockApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTest.findMissingUserByLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MockApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="findMissingUserByLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTests.testLogin">
     <configuration name="UserRepositoryTest.findUserByLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MockApplication" />
       <extension name="coverage">
@@ -153,13 +123,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTests.testAddUserWithNullLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserServiceTests" />
+      <option name="METHOD_NAME" value="testAddUserWithNullLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MockApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserServiceTests" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTests.testLogin" />
+        <item itemvalue="JUnit.UserServiceTests.testAddUserWithNullLogin" />
         <item itemvalue="JUnit.UserRepositoryTest.findUserByMatchingPassword" />
         <item itemvalue="JUnit.UserRepositoryTest.findUserByLogin" />
         <item itemvalue="JUnit.UserRepositoryTest.findUserByLoginAndPassword" />
-        <item itemvalue="JUnit.UserRepositoryTest.findMissingUserByLogin" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +182,9 @@
       <workItem from="1678624686011" duration="3186000" />
       <workItem from="1678636577986" duration="2686000" />
       <workItem from="1678699934584" duration="12501000" />
-      <workItem from="1678814218492" duration="6238000" />
+      <workItem from="1678814218492" duration="7180000" />
+      <workItem from="1678924575676" duration="2296000" />
+      <workItem from="1678962533017" duration="5877000" />
     </task>
     <task id="LOCAL-00001" summary="Spring и Mockito">
       <created>1678732511627</created>
@@ -196,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678814387554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spring и Mockito">
+      <created>1678820787438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678820787438</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

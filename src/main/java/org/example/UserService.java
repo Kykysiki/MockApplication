@@ -5,7 +5,7 @@ import java.util.Optional;
 public class UserService {
     private final UserRepository userRepository;
 
-    public UserService() {
+    public UserService(UserRepository userRepository) {
         this.userRepository = new UserRepository();
         addUser("Test1", "Test1");
         addUser("Test2", "Test2");
